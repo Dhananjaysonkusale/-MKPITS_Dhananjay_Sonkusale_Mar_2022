@@ -2,27 +2,24 @@
 #include<conio.h>
 void main()
 {
-	int num,a,b,c,rev,res;
-	int res2,res3,resf;
+	int num,a,b,c,res,a1;
 	printf("Enter any 3 digit number : ");
 	scanf("%d",&num);
-	a=num%10;
-	num=num/10;
-	b=num%10;
-	num=num/10;
-	c=num%10;
+	a1=num;
+	a=a1%10;
+	a1=a1/10;
+	b=a1%10;
+	a1=a1/10;
+	c=a1%10;
 	
-	res=a*a*a;
-	res2=b*b*b;
-	res3=c*c*c;
-	resf=res+res2+res3;
-	if(num==resf);
-	{
-		printf("Your number is armstrong number");
-	}
-	if(num=!resf)
-	{
-		printf("your number is not armstrong ");
-	}
+	res=(a*a*a)+(b*b*b)+(c*c*c);
+	if(num==res)
+		{
+			printf("Number is armstrong");
+		}
+	else
+		{
+		printf("Number is not armstrong");
+		}
 	
 }
