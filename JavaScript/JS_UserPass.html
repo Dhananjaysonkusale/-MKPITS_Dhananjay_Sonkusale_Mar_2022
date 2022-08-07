@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+
+    <script>
+        function function1() {
+            var u = document.getElementById("t1").value;
+            var p = document.getElementById("t2").value;
+
+            if (u == "admin" && p == "admin") {
+                document.getElementById("s1").innerText = "login successfull";
+            }
+            else {
+                document.getElementById("s1").innerHTML = "Please Enter Correct Username Password";
+            }
+
+        }
+    </script>
+    <style>
+        form {
+            padding: 20px;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        p {
+            color: brown;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="height:60vh;">
+        <Legend>Login</Legend>
+        <form align="center">
+            <div>
+                <h1 align="center">Login</h1>
+                <hr><br>
+                <p>Username : <input type="text" name="t1" id="t1" /></p>
+
+                <p>Password : <input type="password" name="t2" id="t2" /></p>
+                <br><br>
+
+                <input type="button" value="Sign In" onclick="function1();"> </input><br><br>
+
+                <span id="s1"> </span>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
