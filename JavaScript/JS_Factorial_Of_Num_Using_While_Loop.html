@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script>
+        function display() {
+            var num, fact = 1;
+
+            num = parseInt(document.f1.n1.value);
+            var i=num;
+            while (i > 0) 
+            {
+                fact = fact * i;
+                i--;
+            }
+
+            document.getElementById("r1").innerHTML = fact;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 align=center>Factorial Of Number</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>calculation </legend>
+                Enter Number : <input type=text name="n1" />
+                <br><br>
+
+                <input type=button value="result" onclick="display();" />
+                <br><br>
+                result : <span id="r1" name="res"></span>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
