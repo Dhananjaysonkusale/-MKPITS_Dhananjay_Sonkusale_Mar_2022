@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 onclick="this.innerHTML = 'Welcome to My Page!'">Click Here!</h1>
+
+</body>
+
+</html>
+
+<!DOCTYPE html> -->
+
+<!-- <html>
+<body>
+
+<h1 onclick="changeText(this)">Click Here !</h1>
+
+<script>
+function changeText(id) {
+id.innerHTML = "Welcome To My Page!";
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <html>
+<script>
+function changet(t)
+{
+t.style.color="red";
+t.innerText="welcome to My Page";
+}
+
+</script>
+<body>
+<h1 onclick="changet(this);">Click Here</h1>
+
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<p>Click "Try it" to execute the displayDate() function.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+</body>
+</html>
