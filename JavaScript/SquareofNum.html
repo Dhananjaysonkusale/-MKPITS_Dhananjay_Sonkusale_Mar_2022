@@ -1,0 +1,28 @@
+<!-- program to accept a no. from the user through html form and then pass it to the function to calculate and
+display the square of a number. -->
+<html>
+
+<head>
+    <script>
+
+        function display() {
+            var num1 = document.getElementById("t1").value;
+            var sq = num1 * num1;
+            alert("square of a number " + sq);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align=center> JavaScript</h1>
+
+    <br>
+    <form>
+        Enter a Number : <input type=text name="t1" id="t1" /> <br><br>
+        <input type=button value="Result" onclick="display();" />
+    </form>
+
+</body>
+
+</html>
