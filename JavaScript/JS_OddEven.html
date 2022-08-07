@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        function msg() {
+            var num1, result;
+            num1 = parseFloat(document.f1.n1.value); //parseInt function is used to convert string into integer
+
+            if (num1 % 2 == 0) {
+                document.getElementById("r1").innerHTML = "Number is Even";
+            }
+            else {
+                document.getElementById("r1").innerHTML = "Number is Odd";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align=center>Odd Even Number</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>calculation </legend>
+                Enter Number : <input type=text name="n1" />
+                <br><br>
+
+                <input type=button value="Press for Result" onclick="msg();" />
+                <br><br>
+                Result : <span id="r1" name="res"></span>
+            </fieldset>
+        </form>
+
+    </center>
+</body>
+
+</html>
