@@ -1,0 +1,32 @@
+<script>
+
+    function getresult(m1, m2, m3) {
+        var emp = new Object();
+        emp.empno = m1;
+        emp.name = m2;
+        emp.salary = m3;
+        //emp={empno:m1,name:m2,salary:m3}
+        document.getElementById("t").innerHTML = emp.empno;
+        document.getElementById("p").innerHTML = emp.name;
+        document.getElementById("s").innerHTML = emp.salary;
+    }
+</script>
+
+<body>
+    <fieldset>
+        <h1 align="center">Object in JavaScript</h1>
+
+        <form name="f1" align="center"><hr>
+            Enter Empolyee No : <input type=text name="t1" /><br><br>
+            Enter Employee Name : <input type=text name="t2" /><br><br>
+            Enter Employee Salary: <input type=text name="t3" /><br><br>
+            <input type="button" value="click"
+                onclick="getresult(document.f1.t1.value,document.f1.t2.value,document.f1.t3.value)" />
+            <br><br>
+            Employee No : <span id="t"></span> <br><br>
+            Employee Name : <span id="p"></span> <br><br>
+            Employee Salary : <span id="s"></span> <br><br>
+
+        </form>
+    </fieldset>
+</body>
