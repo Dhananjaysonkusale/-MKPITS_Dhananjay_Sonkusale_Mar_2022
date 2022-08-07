@@ -1,0 +1,30 @@
+<!-- <script>
+function getcube(number){
+alert(number*number*number);
+}
+</script>
+<form>
+<input type="button" value="click" onclick="getcube(4)"/>
+</form> -->
+
+
+
+<script>
+    function getcube(number) {
+
+        result=number*number*number;
+        document.getElementById("res").innerHTML=result;
+    }
+</script>
+<body>
+    <fieldset>
+
+        <h1 align="center">Calculate Cube of a any Number</h1>
+        <form name="f1" align="center">
+            Enter Number : <input type=text name="t1" /><br><br>
+            <input type="button" value="Result" onclick="getcube(document.f1.t1.value)" /><br><br>
+            Result : <span id="res"></span>
+        </form>
+    </fieldset>
+</body>
+
